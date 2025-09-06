@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { env } from '@/lib/env';
 
-export const siteMetadata = {
+export const siteConfig = {
   name: 'Fen Email',
   shortName: 'Fen',
   title: 'Email reimagined for modern workflows.',
@@ -11,17 +11,18 @@ export const siteMetadata = {
   githubUrl: 'https://github.com/fenemail',
   twitterUrl: 'https://twitter.com/fen_email',
   discordUrl: 'https://discord.gg/fenemail',
+  roadmapUrl: 'https://github.com/fenemail/roadmap',
   supportEmail: 'support@fen.email',
 };
 
 export const createMetadata = (override: Metadata): Metadata => ({
   ...override,
   openGraph: {
-    siteName: siteMetadata.shortName,
+    siteName: siteConfig.shortName,
     ...override.openGraph,
   },
   twitter: {
-    creator: `@${new URL(siteMetadata.twitterUrl).pathname.split('/').filter(Boolean).at(0)}`,
+    creator: `@${new URL(siteConfig.twitterUrl).pathname.split('/').filter(Boolean).at(0)}`,
     ...override.twitter,
   },
   metadataBase: new URL(env.NEXT_PUBLIC_APP_URL),

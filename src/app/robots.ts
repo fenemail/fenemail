@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import { siteMetadata } from '@/config/metadata';
+import { siteConfig } from '@/config/metadata';
 
 export default function robots(): MetadataRoute.Robots {
   // https://www.webdevtutor.net/blog/robots-txt-block-next-folder-next-js
@@ -13,8 +13,11 @@ export default function robots(): MetadataRoute.Robots {
   ];
 
   return {
-    rules: { userAgent: '*', allow: '/', disallow: disallowedFiles },
-    sitemap: `${siteMetadata.siteUrl}/sitemap.xml`,
-    host: siteMetadata.siteUrl,
+    rules: [
+      { userAgent: '*', allow: '/', disallow: disallowedFiles },
+      { userAgent: '*', disallow: '/mail' },
+    ],
+    sitemap: `${siteConfig.siteUrl}/sitemap.xml`,
+    host: siteConfig.siteUrl,
   };
 }
