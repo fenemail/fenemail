@@ -1,11 +1,11 @@
-import { description, name, shortName } from '@/lib/metadata';
+import { siteMetadata } from '@/config/metadata';
 import type { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name,
-    short_name: shortName,
-    description: description,
+    name: siteMetadata.name,
+    short_name: siteMetadata.shortName,
+    description: siteMetadata.description,
     start_url: '/',
     display: 'standalone',
     background_color: '#27272D',

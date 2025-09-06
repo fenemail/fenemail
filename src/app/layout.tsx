@@ -1,6 +1,6 @@
 import './globals.css';
 import localFont from 'next/font/local';
-import { createMetadata, description, shortName, title } from '@/lib/metadata';
+import { createMetadata, siteMetadata } from '@/config/metadata';
 import { cn } from '@/lib/utils';
 
 const satoshiFont = localFont({
@@ -15,10 +15,10 @@ const jetBrainsMonoFont = localFont({
 
 export const metadata = createMetadata({
   title: {
-    template: `%s | ${shortName}`,
-    default: `${shortName} | ${title}`,
+    template: `%s | ${siteMetadata.shortName}`,
+    default: `${siteMetadata.shortName} | ${siteMetadata.title}`,
   },
-  description,
+  description: siteMetadata.description,
 });
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
