@@ -1,5 +1,11 @@
 {
-  "cSpell.words": ["fenemail", "shadcn", "sonner", "turbopack"],
+  "cSpell.words": [
+    "fenemail",
+    "satoshi",
+    "shadcn",
+    "sonner",
+    "turbopack"
+  ],
   "prettier.enable": false,
   "eslint.enable": false,
   "editor.codeActionsOnSave": {
