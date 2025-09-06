@@ -1,13 +1,12 @@
 import type { NextConfig } from 'next';
-import { siteConfig } from '@/config/metadata';
 
 const nextConfig: NextConfig = {
   async redirects() {
     return [
-      { source: '/github', destination: siteConfig.githubUrl, permanent: false },
-      { source: '/discord', destination: siteConfig.discordUrl, permanent: false },
-      { source: '/twitter', destination: siteConfig.twitterUrl, permanent: false },
-      { source: '/roadmap', destination: siteConfig.roadmapUrl, permanent: false },
+      { source: '/github', destination: 'https://github.com/fenemail', permanent: false },
+      { source: '/discord', destination: 'https://twitter.com/fen_email', permanent: false },
+      { source: '/twitter', destination: 'https://discord.gg/fenemail', permanent: false },
+      { source: '/roadmap', destination: 'https://github.com/fenemail/roadmap', permanent: false },
     ];
   },
 };
