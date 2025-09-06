@@ -118,9 +118,6 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "ss03" 1;
   }
-}
-
-@utility font-feature-ss03 {
-  font-feature-settings: "ss03";
 }
