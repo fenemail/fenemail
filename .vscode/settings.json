@@ -1,11 +1,5 @@
 {
-  "cSpell.words": [
-    "fenemail",
-    "satoshi",
-    "shadcn",
-    "sonner",
-    "turbopack"
-  ],
+  "cSpell.words": ["fenemail", "opengraph", "satoshi", "shadcn", "sonner", "turbopack"],
   "prettier.enable": false,
   "eslint.enable": false,
   "editor.codeActionsOnSave": {
