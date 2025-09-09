@@ -1,5 +1,5 @@
-import { siteConfig } from '@/config/metadata';
 import type { MetadataRoute } from 'next';
+import { siteConfig } from '@/config/metadata';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: siteConfig.description,
     start_url: '/',
     display: 'standalone',
-    background_color: '#27272D',
-    theme_color: '#F3D0B1',
+    background_color: '#27272C',
+    theme_color: '#E7C6A7',
     icons: [
       {
         src: '/android-chrome-192x192.png',
