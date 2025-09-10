@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["fenemail", "opengraph", "satoshi", "shadcn", "sonner", "turbopack"],
+  "cSpell.words": ["fenemail", "oklch", "opengraph", "satoshi", "shadcn", "sonner", "tabindex", "turbopack"],
   "prettier.enable": false,
   "eslint.enable": false,
   "editor.codeActionsOnSave": {
@@ -25,9 +25,12 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[tailwindcss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "biomejs.biome"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
   }
 }

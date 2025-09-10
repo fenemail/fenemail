@@ -23,8 +23,8 @@ export const metadata = createMetadata({
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body className={cn(satoshiFont.variable, jetBrainsMonoFont.variable, 'antialiased')}>{children}</body>
+    <html lang="en" className={cn(satoshiFont.variable, jetBrainsMonoFont.variable)}>
+      <body>{children}</body>
     </html>
   );
 }
